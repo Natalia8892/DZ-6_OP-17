@@ -1,0 +1,11 @@
+var Array = []
+
+function getDivisors(arr) {
+    for (var i = 0; i <= arr; i++) {
+        if (arr % i === 0) {
+            Array.push(i)
+        }
+    }
+}
+getDivisors(32)
+console.log(Array)
