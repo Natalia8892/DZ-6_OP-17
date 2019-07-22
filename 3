@@ -1,0 +1,15 @@
+var arr = [1, 2, 3, -1, -2, -3];
+var Array = []
+function isPositive(number) {
+        if (number > 0) {
+            return true
+        } else {
+            return false
+        }
+}
+for (var i=0; i<arr.length; i++) {
+	if(isPositive(arr[i])) {
+		Array.push(arr[i])
+    }
+} 
+console.log(Array)
