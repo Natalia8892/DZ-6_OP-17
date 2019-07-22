@@ -1,0 +1,19 @@
+function getDigitsSum(a) {
+    var array = a.toString().split("")
+    var sum = 0
+    var sum1 = 0
+    for (var i = 0; i < array.length; i++) {
+        sum += (parseInt(array[i]))
+    }
+    if (sum > 9) {
+        var array1 = sum.toString().split("")
+        for (var i = 0; i < array1.length; i++) {
+            sum1 += (parseInt(array1[i]))
+        }
+        console.log(sum1)
+    } else {
+        console.log(sum)
+    }
+}
+
+getDigitsSum(365)
