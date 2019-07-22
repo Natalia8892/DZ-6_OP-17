@@ -1,0 +1,16 @@
+var arr = [15, 2, 38, 64, 1, -5, 7], Array = []
+
+function isNumberInRange(number) {
+    if (number > 0 && number < 10) {
+        return true
+    } else {
+        return false
+    }
+}
+for (var x of arr) {
+    if (isNumberInRange(x)) {
+        Array.push(x)
+    }
+}
+
+console.log(Array)
