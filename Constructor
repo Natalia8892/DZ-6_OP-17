@@ -1,0 +1,33 @@
+var LibraryBook = function() {
+
+    this.bookTitle = "Sweater"
+    this.year = 2007
+    this.author = "M.C.Clow"
+    var readerName = ""
+    var readerData = ""
+
+    function giveBook(client) {
+        readerName = client
+        readerData = new Date()
+	}
+    this.showBookInfo = function() {
+		giveBook(client)
+        console.log(readerData)
+    }
+    this.getBook = function(client) {
+        if (readerName === "") {
+            giveBook(client)
+            return this.bookTitle
+        } else {
+            return null
+        }
+    }
+    this.returnBook = function(client) {
+        readerName = ""
+        readerData = ""
+	    }
+}
+
+
+var book = new LibraryBook()
+console.log(book.getBook("Olya"))
