@@ -1,8 +1,8 @@
 var LibraryBook = function() {
-
-    this.bookTitle = "Sweater"
-    this.year = 2007
-    this.author = "M.C.Clow"
+									//this.bibliot = [{bookTitle:"", year:0, author:""}]
+    this.bookTitle=""
+	this.year=0
+	this.author=""
     var readerName = ""
     var readerData = ""
 
