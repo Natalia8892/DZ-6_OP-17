@@ -1,0 +1,42 @@
+var arr = [1, 4, 5, [8, 0, 10, 3], 6, 64, 64, 54, {key: "name",age: 18}],i = 0,newObj = []
+
+function checkObj(number) {
+    if (typeof number === "object" || typeof number === "array") {
+        return true
+    } else {
+        return false
+    }
+}
+
+function Check() {
+    if (i < arr.length) {
+        if (checkObj(arr[i])) {
+            newObj.push(arr[i])
+        } else {
+            console.log(arr[i])
+        }
+        i++
+        Check()
+    }
+}
+Check(arr)
+console.log(newObj)
+
+
+
+var array = [1, 4, 5, [8, 0, 10, 3], 6, 64, 64, 54, {key: "name",age: 18}],i = 0,newObj = []
+
+function Check() {
+    if (typeof array[i] === "object" || typeof array[i] === "array") {
+        newObj.push(array[i])
+	} else {
+        console.log(array[i])
+    }
+    i++
+    if (i < array.length) {
+        Check()
+    }
+}
+
+Check(array)
+console.log(newObj)
